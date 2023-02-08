@@ -80,3 +80,13 @@ def refurbish(item_id: int, new_os: Optional[str] = None):
             computer["operating_system"] = new_os # update details after installing new OS
     else:
         print("Item", item_id, "not found. Please select another item to refurbish.")
+
+def main():
+        buy("Mac Pro (Late 2013)",
+        "3.5 GHc 6-Core Intel Xeon E5",
+        1024, 64,
+        "macOS Big Sur", 2013, 1500)
+
+        print_inventory()
+main()
+
